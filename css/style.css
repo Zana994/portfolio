@@ -89,7 +89,6 @@ header {
   width: 100%;
   height: 80px;
   background-color: transparent;
-  border-radius: 0 0 13px 13px;
   position: absolute;
   top: 0;
   z-index: 111;
@@ -114,6 +113,12 @@ header .social span {
   height: 40px;
 }
 
+header .social span a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
 header .social .github {
   background: url(Icons/github_icon.svg) center center no-repeat;
 }
@@ -132,8 +137,13 @@ header .social .linkedin:hover {
   background: url(Icons/linkedin_icon_pink.svg) center center no-repeat;
 }
 
+header .hamburger-nav, header .close {
+  display: none;
+}
+
 header nav {
-  width: 50%;
+  width: 45%;
+  margin-right: 2rem;
 }
 
 header nav ul {
@@ -214,12 +224,9 @@ header nav ul span {
   width: 490px;
   height: 490px;
   background-color: #e4e4e4;
-  /*position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
   border-radius: 50%;
   overflow: hidden;
+  margin: 5rem 0 0 0;
 }
 
 .about .profile_photo img {
@@ -234,12 +241,7 @@ header nav ul span {
 
 .about .about_text {
   width: 460px;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  /*position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);*/
+  margin: 4rem;
 }
 
 .about .about_text p:nth-child(1) {
@@ -394,7 +396,7 @@ header nav ul span {
 }
 
 .skills .skills_container {
-  width: 88%;
+  width: 90%;
   padding-bottom: 5rem;
   background-color: white;
   margin: auto;
@@ -411,7 +413,7 @@ header nav ul span {
 }
 
 .skill_list {
-  width: 50%;
+  width: 60%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -468,8 +470,8 @@ header nav ul span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(33%, #fff), color-stop(33%, #ddd), color-stop(33.3%, #fff), color-stop(66%, #fff), color-stop(66%, #ddd), color-stop(66.3%, #ddd), color-stop(66.3%, #fff));
-  background-image: linear-gradient(to right, #fff, #fff 33%, #ddd 33%, #fff 33.3%, #fff 66%, #ddd 66%, #ddd 66.3%, #fff 66.3%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(33%, #fff), color-stop(33%, #ddd), color-stop(33.3%, #ddd), color-stop(33.3%, #fff), color-stop(66%, #fff), color-stop(66%, #ddd), color-stop(66.3%, #ddd), color-stop(66.3%, #fff));
+  background-image: linear-gradient(to right, #fff, #fff 33%, #ddd 33%, #ddd 33.3%, #fff 33.3%, #fff 66%, #ddd 66%, #ddd 66.3%, #fff 66.3%);
 }
 
 .skill_list .bar_container .loading_bar {
@@ -522,7 +524,7 @@ header nav ul span {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 50%;
+  width: 60%;
   font-family: Regular;
   font-size: 14px;
   color: #a8a8a8;
@@ -530,7 +532,7 @@ header nav ul span {
 }
 
 .levels li {
-  width: 120px;
+  width: 20%;
   text-align: center;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -561,13 +563,18 @@ header nav ul span {
 .contact .contactForm p {
   font-family: Roboto-Thin;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   color: white;
   letter-spacing: 2px;
   background-color: #FF9292;
   padding: 1.3rem;
-  border-radius: 4px 50px 4px 50px;
+}
+
+.contact .contactForm p:nth-of-type(2) {
+  border-radius: 0;
+  font-family: Regular;
+  font-size: 0.7rem;
 }
 
 .contact .contactForm form {
@@ -702,6 +709,12 @@ footer span {
   height: 40px;
 }
 
+footer span a {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
 footer span:nth-child(1) {
   background: url(Icons/iconfinder_107108_github_gray_icon.svg) center center no-repeat;
 }
@@ -757,6 +770,9 @@ footer span:nth-child(2):hover {
 }
 
 @media only screen and (max-width: 1100px) {
+  header nav {
+    width: 50%;
+  }
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -765,6 +781,215 @@ footer span:nth-child(2):hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .about .about_text {
+    margin: 4rem 0;
+  }
+  .skill_list, .levels {
+    width: 65%;
+  }
+  .contact .contactForm form {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .skills_container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills_container .skill_list, .skills_container .levels {
+    margin-left: 0;
+    width: 70%;
+  }
+  .contact .contactForm form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  header nav {
+    width: 55%;
+  }
+  .skills_container .skill_list, .skills_container .levels {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header nav {
+    width: 60%;
+  }
+  .contact .contactForm form {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header nav {
+    width: 67%;
+  }
+  .projects .projects_container {
+    width: 95%;
+  }
+  .skills .skills_container {
+    width: 95%;
+  }
+  .skills .skills_container .skill_list, .skills .skills_container .levels {
+    width: 80%;
+  }
+  .contact .contactForm {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header nav {
+    width: 10%;
+  }
+  header nav .hamburger-nav {
+    display: block;
+    width: 24px;
+    height: 16px;
+  }
+  header nav .hamburger-nav a {
+    display: block;
+    width: 24px;
+    height: 15px;
+    background: url(Icons/icon-hamburger.svg) center center no-repeat;
+  }
+  header nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  header nav div .close {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  header nav div .close a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(Icons/icon-close.svg) center center no-repeat;
+  }
+  header nav div:target {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f8c5c4;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav div:target .close {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 2rem;
+    width: 10%;
+    margin-top: 30px;
+  }
+  header nav div:target ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  header nav div:target ul li {
+    height: 50px;
+  }
+  header nav div:target ul li a {
+    color: white;
+  }
+  .skills_container .skill_list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills_container .skill_list li .skill {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .skills_container .skill_list li .bar_container {
+    width: 70%;
+  }
+  .skills_container .levels {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+  .skills_container .levels li {
+    font-size: 10px;
+  }
+  .contact .contactForm form {
+    width: 95%;
+  }
+  .contact .contactForm form input {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .about .profile_photo {
+    width: 420px;
+    height: 420px;
+    background: url(photo_resized_small.jpg) center center no-repeat;
+    background-size: contain;
+    background-color: #e4e4e4;
+  }
+  .about .profile_photo img {
+    display: none;
+  }
+  .about .about_text {
+    width: 80%;
+  }
+  .about .about_text p:nth-child(1) {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about .profile_photo {
+    width: 375px;
+    height: 375px;
+  }
+  .projects .projects_container [class^="project_"]::before, .projects .projects_container [class^="project_"]::after {
+    display: none;
+  }
+  .projects .projects_container [class^="project_"]:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .skills_container .skill_list li .bar_container {
+    width: 100%;
+  }
+  .skills_container .levels li {
+    width: 30%;
+  }
+  .contact .contactForm form {
+    padding: 1rem;
+  }
+  .contact .contactForm form input {
+    width: 90%;
+  }
+  .contact .contactForm form label {
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
