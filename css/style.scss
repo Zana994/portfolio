@@ -196,7 +196,7 @@ header {
             font-size: 2.9rem;
         }
         p:nth-child(2) {
-            color: white;
+            //color: white;
             color: #FF7171;
             font-family: Regular;
             font-size: 1.1rem;
@@ -428,20 +428,23 @@ header {
         flex-direction: column;
         border-radius: 40px 4px 40px 4px;
         p {
-            font-family: Roboto-Thin;
+            font-family: Roboto-Medium;
+            //font-family: Bold;
             text-align: center;
             font-size: 1.8rem;
             margin-bottom: 1rem;
             color: white;
             letter-spacing: 2px;
             background-color: #FF9292;
+            background-color: #f8c5c4;
             padding: 1.3rem;
             //border-radius: 4px 50px 4px 50px;
         }
         p:nth-of-type(2) { 
             border-radius: 0;
             font-family: Regular;
-            font-size: 0.7rem;
+            //font-family: Bold;
+            font-size: 0.8rem;
         }
         form {
             position: relative;
@@ -464,7 +467,7 @@ header {
                 border-bottom: 30px solid #faf9f9;
             }
             label {
-                font-family: Roboto-Light;
+                font-family: Regular;
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 font-size: 12px;
@@ -502,17 +505,18 @@ header {
                 align-items: center;
                 width: 180px;
                 height: 50px;
-                font-family: Roboto-Thin;
+                font-family: Roboto-Light;
                 font-size: 15px;
                 text-transform: uppercase;
                 color: white;
                 letter-spacing: 3px;
                 border-radius: 10px;
                 margin: 2rem 0;
-                background-color: #FF9292;
+                //background-color: #FF9292;
+                background-color: #f8c5c4;
                 cursor: pointer;
                 box-shadow: 0 5px 7px -1px rgb(202, 202, 202);
-                &:hover { background-color: #045762;}
+                &:hover { background-color: #FF7171;}
                 span {
                     display: inline-block;
                     margin-left: 15px;
@@ -710,13 +714,18 @@ footer {
             li {
                 display: flex;
                 flex-direction: column;
-                .skill { align-self: flex-start;}
+                margin-bottom: 2rem;
+                .skill { 
+                    align-self: flex-start;
+                    margin-bottom: 1rem;
+                }
                 .bar_container { width: 70%;}
             }
         }
         .levels {
             justify-content: center;
             margin-top: 2rem;
+            margin-bottom: 2rem;
             li { font-size: 10px;}
         }
     }

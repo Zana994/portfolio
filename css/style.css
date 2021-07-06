@@ -251,7 +251,6 @@ header nav ul span {
 }
 
 .about .about_text p:nth-child(2) {
-  color: white;
   color: #FF7171;
   font-family: Regular;
   font-size: 1.1rem;
@@ -561,20 +560,21 @@ header nav ul span {
 }
 
 .contact .contactForm p {
-  font-family: Roboto-Thin;
+  font-family: Roboto-Medium;
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: white;
   letter-spacing: 2px;
   background-color: #FF9292;
+  background-color: #f8c5c4;
   padding: 1.3rem;
 }
 
 .contact .contactForm p:nth-of-type(2) {
   border-radius: 0;
   font-family: Regular;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .contact .contactForm form {
@@ -603,7 +603,7 @@ header nav ul span {
 }
 
 .contact .contactForm form label {
-  font-family: Roboto-Light;
+  font-family: Regular;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 12px;
@@ -656,21 +656,21 @@ header nav ul span {
           align-items: center;
   width: 180px;
   height: 50px;
-  font-family: Roboto-Thin;
+  font-family: Roboto-Light;
   font-size: 15px;
   text-transform: uppercase;
   color: white;
   letter-spacing: 3px;
   border-radius: 10px;
   margin: 2rem 0;
-  background-color: #FF9292;
+  background-color: #f8c5c4;
   cursor: pointer;
   -webkit-box-shadow: 0 5px 7px -1px #cacaca;
           box-shadow: 0 5px 7px -1px #cacaca;
 }
 
 .contact .contactForm form button:hover {
-  background-color: #045762;
+  background-color: #FF7171;
 }
 
 .contact .contactForm form button span {
@@ -921,10 +921,12 @@ footer span:nth-child(2):hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 2rem;
   }
   .skills_container .skill_list li .skill {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-bottom: 1rem;
   }
   .skills_container .skill_list li .bar_container {
     width: 70%;
@@ -934,6 +936,7 @@ footer span:nth-child(2):hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .skills_container .levels li {
     font-size: 10px;
