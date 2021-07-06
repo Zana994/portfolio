@@ -905,6 +905,7 @@ footer span:nth-child(2):hover {
             flex-direction: column;
     margin-top: 100px;
     margin-left: 50px;
+    width: 60%;
   }
   header nav div:target ul li {
     height: 50px;
