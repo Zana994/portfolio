@@ -1,0 +1,37 @@
+$text_color1: #343A40;
+$hover_color: #FF7171;
+$bgd_pink: #f8c5c4;
+$bgd_grey: #e6e6e6;
+
+@mixin flex-pos($content, $itmes, $direction: row) {
+    display: flex;
+    justify-content: $content;
+    align-items: $itmes;
+    flex-direction: $direction;
+}
+@mixin font_style($color, $family, $size, $spacing, $weight: unset) {
+    color: $color;
+    font: {
+        family: $family;
+        size: $size;
+        weight: $weight; 
+    };
+    letter-spacing: $spacing;
+}
+@mixin text_style($align, $transform: unset) {
+    text-align: $align;
+    text-transform: $transform;
+}
+@mixin pseudo_style($top, $right, $bottom, $left) {
+    content: '';
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+}
+@mixin element_style($display, $width, $height) {
+    display: $display;
+    width: $width;
+    height: $height;
+}
