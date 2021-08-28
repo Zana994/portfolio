@@ -216,6 +216,9 @@ header {
             }
         }
     }
+    .project_1 {
+        h4 { width: 80%;}
+    }
 }
 
 
@@ -296,8 +299,8 @@ header {
         }
         .fourth.loading {
             &::after {  
-                width: 30%;
-                max-width: 30%;
+                width: 40%;
+                max-width: 40%;
             }
         }
     }

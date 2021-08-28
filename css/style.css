@@ -470,6 +470,10 @@ header nav ul span {
   background-color: #ff7c7a;
 }
 
+.projects .project_1 h4 {
+  width: 80%;
+}
+
 /* SKILLS */
 .skills {
   width: 100%;
@@ -629,8 +633,8 @@ header nav ul span {
 }
 
 .skill_list .bar_container .fourth.loading::after {
-  width: 30%;
-  max-width: 30%;
+  width: 40%;
+  max-width: 40%;
 }
 
 .levels {
