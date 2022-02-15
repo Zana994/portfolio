@@ -297,7 +297,7 @@ nav.show { transform: scaleX(1);}
             font-weight: bold;
         }
     }
-    
+    .col-1 { margin-right: 2rem;}
     div[class*='option'] {
         width: 80px;
         height: 80px;
@@ -432,7 +432,12 @@ footer {
             }
         }
     }
-    .col-1 { width: 17%;}
+    .contactContainer {
+        .col-1 { 
+            width: 23%;
+            margin-right: 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {

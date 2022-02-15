@@ -375,6 +375,10 @@ nav.show {
   font-weight: bold;
 }
 
+.contactContainer .col-1 {
+  margin-right: 2rem;
+}
+
 .contactContainer div[class*='option'] {
   width: 80px;
   height: 80px;
@@ -531,8 +535,9 @@ footer {
   nav ul li::after {
     display: none;
   }
-  .col-1 {
-    width: 17%;
+  .contactContainer .col-1 {
+    width: 23%;
+    margin-right: 0;
   }
 }
 
