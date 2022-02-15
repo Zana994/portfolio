@@ -165,7 +165,6 @@ nav.show { transform: scaleX(1);}
 .d-flex { flex-direction: column; }
 .projectsContainer {
     margin: 8rem 0 6rem 0;
-    //background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
     .projectWrapper {
         position: relative;
         transition: transform .3s ease-out;
@@ -232,10 +231,8 @@ nav.show { transform: scaleX(1);}
     }
     p:nth-child(1) {
         font-family: Roboto;
-        font-weight: 400;
         font-weight: bold;
         font-size: 0.85em;
-        color: #ff7c7a;
         color: #FF7171;
         border-bottom: 1px solid #e7e7e7;
         padding-bottom: 1rem;
@@ -288,9 +285,7 @@ nav.show { transform: scaleX(1);}
     top: 0;
     h4 {
         color: rgba($color: #ffffff, $alpha: 0.9);
-        //font-family: 'Roboto';
         font-family: 'Space Mono';
-        //font-weight: bold;
         letter-spacing: 1px;
         margin-bottom: 3rem;
         text-align: center;
@@ -327,7 +322,7 @@ nav.show { transform: scaleX(1);}
     }
     .option-1 span { background: url(../icons/github_pink.svg) center center no-repeat;}
     .option-2 span { background: url(../icons/linkedin_pink.svg) center center no-repeat;}
-    .option-3 span { background: url(../icons/envelope-pink.svg) center center no-repeat;}
+    .option-3 span { background: url(../icons/envelope_pink.svg) center center no-repeat;}
     .option-1:hover {
         span { background: url(../icons/github.svg) center center no-repeat;}
     }
@@ -335,7 +330,7 @@ nav.show { transform: scaleX(1);}
         span { background: url(../icons/linkedin.svg) center center no-repeat;}
     }
     .option-3:hover {
-        span { background: url(../icons/envelope-white.svg) center center no-repeat;}
+        span { background: url(../icons/envelope_white.svg) center center no-repeat;}
     }
 
 }
@@ -370,7 +365,7 @@ footer {
             }
             .option-1:hover span { background: url(../icons/github_pink.svg) center center no-repeat;}
             .option-2:hover span { background: url(../icons/linkedin_pink.svg) center center no-repeat;}
-            .option-3:hover span { background: url(../icons/envelope-pink.svg) center center no-repeat;}
+            .option-3:hover span { background: url(../icons/envelope_pink.svg) center center no-repeat;}
         }
     }
     .projectsContainer {
@@ -399,7 +394,7 @@ footer {
             }
             .option-1:hover span { background: url(../icons/github_pink.svg) center center no-repeat;}
             .option-2:hover span { background: url(../icons/linkedin_pink.svg) center center no-repeat;}
-            .option-3:hover span { background: url(../icons/envelope-pink.svg) center center no-repeat;}
+            .option-3:hover span { background: url(../icons/envelope_pink.svg) center center no-repeat;}
         }
     }
     .projectsContainer {
@@ -421,16 +416,18 @@ footer {
         position: absolute;
         top: 2rem;
         right: 0;
-        background-color: #f8c5c4;;
-        padding: 2rem 3rem;
+        background-color: rgba($color: #f8c5c4, $alpha: 0.9);
+        padding: 3rem 4rem 0 3rem;
+        border-bottom-left-radius: 5px;
         transform: scaleX(0);
-        transition: transform .5s ease-out;
+        transition: transform .5s ease-in-out;
         transform-origin: right;
         ul {
             flex-direction: column;
             padding: 0;
             li { 
                 margin: 0;
+                margin-bottom: 2rem;
                 &::after { display: none;}
             }
         }
@@ -448,6 +445,12 @@ footer {
                 max-width: 375px;
                 height: auto;
                 margin-top: 2rem;
+            }
+        }
+        .aboutText {
+            p:nth-child(2) {
+                letter-spacing: 1px;
+                line-height: 1.3rem;
             }
         }
     }

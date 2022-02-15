@@ -6,7 +6,7 @@ import dashboard from '../photos/dashboard.png'
 import countdownTimer from '../photos/countdown_timer.png'
 import roomHomepage from '../photos/room_homepage.png'
 
-const projects = () => {
+const Projects = () => {
   return (
   <div className='container projectsContainer'>
     <div className='row gy-5 justify-content-center align-items-center'>
@@ -100,4 +100,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

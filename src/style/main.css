@@ -300,10 +300,8 @@ nav.show {
 
 .descriptionContainer p:nth-child(1) {
   font-family: Roboto;
-  font-weight: 400;
   font-weight: bold;
   font-size: 0.85em;
-  color: #ff7c7a;
   color: #FF7171;
   border-bottom: 1px solid #e7e7e7;
   padding-bottom: 1rem;
@@ -412,7 +410,7 @@ nav.show {
 }
 
 .contactContainer .option-3 span {
-  background: url(../icons/envelope-pink.svg) center center no-repeat;
+  background: url(../icons/envelope_pink.svg) center center no-repeat;
 }
 
 .contactContainer .option-1:hover span {
@@ -424,7 +422,7 @@ nav.show {
 }
 
 .contactContainer .option-3:hover span {
-  background: url(../icons/envelope-white.svg) center center no-repeat;
+  background: url(../icons/envelope_white.svg) center center no-repeat;
 }
 
 /* FOOTER */
@@ -458,7 +456,7 @@ footer {
     background: url(../icons/linkedin_pink.svg) center center no-repeat;
   }
   .contactContainer div[class*='option'] .option-3:hover span {
-    background: url(../icons/envelope-pink.svg) center center no-repeat;
+    background: url(../icons/envelope_pink.svg) center center no-repeat;
   }
   .projectsContainer .projectWrapper:hover {
     -webkit-transform: none;
@@ -488,7 +486,7 @@ footer {
     background: url(../icons/linkedin_pink.svg) center center no-repeat;
   }
   .contactContainer div[class*='option'] .option-3:hover span {
-    background: url(../icons/envelope-pink.svg) center center no-repeat;
+    background: url(../icons/envelope_pink.svg) center center no-repeat;
   }
   .projectsContainer .projectWrapper:hover {
     -webkit-transform: none;
@@ -507,14 +505,15 @@ footer {
     position: absolute;
     top: 2rem;
     right: 0;
-    background-color: #f8c5c4;
-    padding: 2rem 3rem;
+    background-color: rgba(248, 197, 196, 0.9);
+    padding: 3rem 4rem 0 3rem;
+    border-bottom-left-radius: 5px;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
-    -webkit-transition: -webkit-transform .5s ease-out;
-    transition: -webkit-transform .5s ease-out;
-    transition: transform .5s ease-out;
-    transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
     -webkit-transform-origin: right;
             transform-origin: right;
   }
@@ -527,6 +526,7 @@ footer {
   }
   nav ul li {
     margin: 0;
+    margin-bottom: 2rem;
   }
   nav ul li::after {
     display: none;
@@ -548,6 +548,10 @@ footer {
     max-width: 375px;
     height: auto;
     margin-top: 2rem;
+  }
+  .aboutContainer .aboutText p:nth-child(2) {
+    letter-spacing: 1px;
+    line-height: 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

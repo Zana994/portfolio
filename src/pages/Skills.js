@@ -1,6 +1,6 @@
 import React from 'react';
 
-const skills = () => {
+const Skills = () => {
   return (
   <div className='container skillsContainer'> 
       <h3>My RoadMap to becoming a self-taught Front-End Developer and Tech Skills:</h3>
@@ -77,4 +77,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;

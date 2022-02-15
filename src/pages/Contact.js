@@ -1,10 +1,10 @@
 import React from 'react';
 
-const contact = () => {
+const Contact = () => {
   return (
       <div className='container contactContainer'>
         <h4>If you want someone who is always curious, love challanges and
-            <b>  think outside of the box</b>, feel free to contact me 
+            <b>  thinks outside of the box</b>, feel free to contact me 
         </h4>
         <div className='container'>
           <div className='row gx-5 justify-content-center align-items-center'>
@@ -35,4 +35,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

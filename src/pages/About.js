@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePhoto from '../photos/profile.jpeg'
 
-const about = () => {
+const About = () => {
   return (
   <div className='container aboutContainer'>
     <div className='row justify-content-center align-items-center'>
@@ -20,4 +20,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
