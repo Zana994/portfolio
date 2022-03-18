@@ -2,14 +2,28 @@ import React from 'react';
 import weatherProject from '../photos/weather.png'
 import ipTracker from '../photos/ip_tracker.png'
 import toDoApp from '../photos/to_do_app.png'
-import dashboard from '../photos/dashboard.png'
 import countdownTimer from '../photos/countdown_timer.png'
 import roomHomepage from '../photos/room_homepage.png'
+import movieApp from '../photos/movie_app.png'
 
 const Projects = () => {
   return (
   <div className='container projectsContainer'>
     <div className='row gy-5 justify-content-center align-items-center'>
+
+    <div className='col d-flex justify-content-center align-items-center'>
+      <a href='https://movie-app-zana994.vercel.app' target={'_blank'} aria-label='Movie App' rel="noreferrer">
+        <div className='projectWrapper'>
+          <div className='project_photo_container'>
+            <img src={movieApp} target={'_blank'} alt='Movie App' />
+          </div>
+          <div className='descriptionContainer'>
+            <p>HTML SCSS REACT JS API</p>
+            <p>DESKTOP VERSION MOVIE APP</p>
+          </div>
+        </div>
+        </a>
+      </div>
 
       <div className='col d-flex justify-content-center align-items-center'>
         <a href='https://weather-app-zana994.vercel.app' target={'_blank'} aria-label='Weather App' rel="noreferrer"> 
@@ -48,20 +62,6 @@ const Projects = () => {
           <div className='descriptionContainer'>
             <p>HTML SCSS VANILLA JS</p>
             <p>TO DO APP</p>
-          </div>
-        </div>
-        </a>
-      </div>
-
-      <div className='col d-flex justify-content-center align-items-center'>
-      <a href='https://dashboard-zana994.vercel.app/' target={'_blank'} aria-label='Social Media Dashboard' rel="noreferrer">
-        <div className='projectWrapper'>
-          <div className='project_photo_container'>
-            <img src={dashboard} target={'_blank'} alt='Social Media Dashboard' />
-          </div>
-          <div className='descriptionContainer'>
-            <p>HTML SCSS VANILLA JS</p>
-            <p>SOCIAL MEDIA DASHBOARD</p>
           </div>
         </div>
         </a>

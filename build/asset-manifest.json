@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.2047cafe.css",
-    "main.js": "/static/js/main.0c626c98.js",
+    "main.js": "/static/js/main.cdd5cf54.js",
     "static/js/787.8d4efb73.chunk.js": "/static/js/787.8d4efb73.chunk.js",
     "static/media/ip_tracker.png": "/static/media/ip_tracker.9840eb9399950c6677a0.png",
+    "static/media/movie_app.png": "/static/media/movie_app.a2f12e1892a50cc125d5.png",
     "static/media/room_homepage.png": "/static/media/room_homepage.4de7cdac59700e4774b6.png",
     "static/media/weather.png": "/static/media/weather.5d4f2b559186c41a8aba.png",
     "static/media/to_do_app.png": "/static/media/to_do_app.a9c6fd43166d0a6c353d.png",
-    "static/media/dashboard.png": "/static/media/dashboard.6ab0d74351923e55725b.png",
     "static/media/countdown_timer.png": "/static/media/countdown_timer.53dc6b480e490b0b6678.png",
     "static/media/profile.jpeg": "/static/media/profile.8eb413b6d23f6143038c.jpeg",
     "index.html": "/index.html",
@@ -21,11 +21,11 @@
     "static/media/hamburger.svg": "/static/media/hamburger.f51672a84098ae941b32.svg",
     "static/media/close.svg": "/static/media/close.1c7467dc89d41bb95532.svg",
     "main.2047cafe.css.map": "/static/css/main.2047cafe.css.map",
-    "main.0c626c98.js.map": "/static/js/main.0c626c98.js.map",
+    "main.cdd5cf54.js.map": "/static/js/main.cdd5cf54.js.map",
     "787.8d4efb73.chunk.js.map": "/static/js/787.8d4efb73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2047cafe.css",
-    "static/js/main.0c626c98.js"
+    "static/js/main.cdd5cf54.js"
   ]
 }
