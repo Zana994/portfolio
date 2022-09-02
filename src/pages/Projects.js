@@ -5,6 +5,7 @@ import toDoApp from '../photos/to_do_app.png'
 import countdownTimer from '../photos/countdown_timer.png'
 import roomHomepage from '../photos/room_homepage.png'
 import movieApp from '../photos/movie_app.png'
+import movieApp2 from '../photos/movie_app_2.png'
 
 const Projects = () => {
   return (
@@ -15,7 +16,7 @@ const Projects = () => {
       <a href='https://movie-app-zana994.vercel.app' target={'_blank'} aria-label='Movie App' rel="noreferrer">
         <div className='projectWrapper'>
           <div className='project_photo_container'>
-            <img src={movieApp} target={'_blank'} alt='Movie App' />
+            <img src={movieApp2} target={'_blank'} alt='Movie App' />
           </div>
           <div className='descriptionContainer'>
             <p>HTML SCSS REACT JS API</p>
