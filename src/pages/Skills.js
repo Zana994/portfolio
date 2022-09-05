@@ -57,6 +57,13 @@ const Skills = () => {
           mastering it.
         </p>
         </div>
+
+        <div className='paragraph'>
+        <span>-- REACT NATIVE --&gt;</span>
+        <p>
+          Along with React, for mobile app development I chose to work with React Native.
+        </p>
+        </div>
         
         <div className='paragraph'>
         <span>-- Version Control System --&gt;</span>
