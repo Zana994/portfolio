@@ -3,7 +3,7 @@ import React from 'react';
 const Skills = () => {
   return (
   <div className='container skillsContainer'> 
-      <h3>My RoadMap to becoming a self-taught Front-End Developer and Tech Skills:</h3>
+      <h3>My RoadMap to becoming a Front-End Developer and Tech Skills:</h3>
       <div className='skills'>
         <div className='paragraph'>
         <span>-- HTML --&gt;</span> 
@@ -64,6 +64,13 @@ const Skills = () => {
           Along with React, for mobile app development I chose to work with React Native.
         </p>
         </div>
+
+        <div className='paragraph'>
+        <span>-- TESTING --&gt;</span>
+        <p>
+          Testing web apps with Jest, React Testing Library and Selenium.
+        </p>
+        </div>
         
         <div className='paragraph'>
         <span>-- Version Control System --&gt;</span>
@@ -78,6 +85,7 @@ const Skills = () => {
           ... Loading
         </p>
         </div>
+
       </div>
 
   </div>

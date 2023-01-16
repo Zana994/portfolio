@@ -5,7 +5,7 @@ const Home = () => {
   return (
   <div> 
       <Header />
-      <footer> Copyright &copy; 2022 Zana </footer>
+      <footer> Copyright &copy; 2023 Zana </footer>
   </div>
   );
 };
